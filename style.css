@@ -1,0 +1,247 @@
+/* Global variables for colors and typography */
+:root {
+  --primary-color: #3a7bd5;
+  --secondary-color: #eef7fd;
+  --text-color: #333333;
+  --light-color: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Navigation */
+header {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Cart badge */
+.cart-count {
+  background-color: #ff5722;
+  border-radius: 50%;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+}
+
+/* Container */
+.main-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(90deg, var(--primary-color), #5fa3e7);
+  color: var(--light-color);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0.5rem auto 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #2f6bb0;
+}
+
+/* Cards and categories */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: var(--light-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+.card-text {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Product detail */
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.product-detail img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.price {
+  font-size: 1.6rem;
+  color: #d32f2f;
+  margin: 1rem 0;
+}
+
+/* Tables for cart and checkout */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+}
+
+.cart-table th {
+  background-color: #e3f1fb;
+}
+
+.quantity-input {
+  width: 50px;
+}
+
+.total-price {
+  text-align: right;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Blog posts */
+.blog-post {
+  background-color: var(--light-color);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.blog-post .citation {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #666666;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+  .product-detail {
+    flex-direction: column;
+  }
+}

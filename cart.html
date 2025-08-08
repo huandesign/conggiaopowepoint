@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html">Sản phẩm</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>
+            <a href="cart.html">Giỏ hàng
+              <span id="cart-count" class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Giỏ hàng của bạn</h1>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="cart-table-body"></tbody>
+      </table>
+      <div class="total-price" id="cart-total"></div>
+      <div style="margin-top: 1rem;">
+        <a href="checkout.html" class="btn">Tiến hành thanh toán</a>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2025 Bộ sưu tập PowerPoint Công giáo.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

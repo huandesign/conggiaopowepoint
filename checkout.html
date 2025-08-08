@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html">Sản phẩm</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>
+            <a href="cart.html">Giỏ hàng
+              <span id="cart-count" class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Thanh toán</h1>
+      <h2>Đơn hàng của bạn</h2>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng</th>
+          </tr>
+        </thead>
+        <tbody id="checkout-table-body"></tbody>
+      </table>
+      <div class="total-price" id="checkout-total"></div>
+      <h2>Phương thức thanh toán</h2>
+      <p>
+        Đối với các sản phẩm có phí, vui lòng chuyển khoản tới tài khoản ngân hàng
+        sau và ghi rõ nội dung thanh toán: <strong>Họ tên + mã đơn hàng</strong>.
+      </p>
+      <ul>
+        <li>Ngân hàng: ACB (Asia Commercial Bank)</li>
+        <li>Số tài khoản: <strong>123456789</strong></li>
+        <li>Chủ tài khoản: <strong>Nhóm Phục vụ Mục vụ</strong></li>
+      </ul>
+      <p>
+        Đối với các sản phẩm miễn phí, bạn có thể tải xuống trực tiếp trên trang
+        chi tiết sản phẩm.
+      </p>
+      <button id="complete-order" class="btn">Hoàn tất đơn hàng</button>
+      <p id="order-message" style="margin-top: 1rem; font-weight: bold;"></p>
+    </main>
+
+    <footer>
+      &copy; 2025 Bộ sưu tập PowerPoint Công giáo.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
